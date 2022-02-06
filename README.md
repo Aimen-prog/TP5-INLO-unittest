@@ -5,8 +5,7 @@ README
 
 **Contenu**
 <br>
-Vérifier le code du [TP3](https://gitlab.com/Aimen-prog/tp3) avec le module unittest : 
-<=> Vérifier si :
+Parcourir le code du [TP3](https://gitlab.com/Aimen-prog/tp3) avec le module unittest afin de vérifier que :
 
 1. une liste chainée venant d’être créée est vide
 2. toute liste sur laquelle on vient d’empiler un élément est non vide
