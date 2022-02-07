@@ -1,8 +1,12 @@
-# coding: utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 __author__ = 'Aimen CHERIF'
 
+
 from node import Node
+
+
 
 class ChainedList():
     """
@@ -12,8 +16,13 @@ class ChainedList():
     nodes : list
         list that we want to transfert in a chained list of Node object
     """
+    first_node: int
+    
     def __init__(self):
         self.first_node = None
+    
+    def __eq__(self, other):
+        return self.first_node == other.first_node
 
     def __iter__(self):     #make the list iterable
         node = self.first_node
