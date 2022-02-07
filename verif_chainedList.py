@@ -12,7 +12,7 @@ class TestChainedList(unittest.TestCase):
     """ This class test functions of ChainedList class """
 
     def setUp(self):
-        """ goes for initialization """
+        """ goes for initialization of two empty linked lists"""
         self.test_list = ChainedList()
         self.another_test_list = ChainedList()
 
@@ -38,8 +38,10 @@ class TestChainedList(unittest.TestCase):
     def test_added_top_equals_top(self):
         """ Tests if the top of a linked list on which we have just stacked an element
         e is e """
-        self.test_list.insert_node_beginning(9)
-        self.assertEqual(self.test_list.first_node.data, 9)
+        self.test_list.insert_node_beginning(1)
+        self.test_list.insert_after(1,2)
+        self.test_list.insert_node_end(3) #1,2,3
+        self.assertEqual(self.test_list.first_node.data, 1)
 
 
 if __name__ == '__main__':
