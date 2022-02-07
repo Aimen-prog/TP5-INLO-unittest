@@ -30,7 +30,7 @@ class TestChainedList(unittest.TestCase):
     def test_add_delete_node_equals(self):
         """ tests if a linked list stacked then unstacked with elements is unchanged"""
         self.another_test_list.insert_node_beginning(7)
-        self.another_test_list.delete_node(7)      
+        self.another_test_list.delete_node(7) 
         self.assertEqual(self.another_test_list, self.test_list)
         #to compare the two objects i've added __eq__method in ChainedList class
 
