@@ -14,7 +14,7 @@ class TestChainedList(unittest.TestCase):
     def setUp(self):
         """ goes for initialization of two empty linked lists"""
         self.test_list = ChainedList()
-        self.another_test_list = ChainedList()
+        self.copy_of_test_list = ChainedList()
 
     def test_chainedList_is_empty(self):
         """ tests if a new linked list is empty """
@@ -29,10 +29,10 @@ class TestChainedList(unittest.TestCase):
 
     def test_add_delete_node_equals(self):
         """ tests if a linked list stacked then unstacked with elements is unchanged"""
-        self.another_test_list.insert_node_beginning(7)
-        self.another_test_list.delete_node(7) 
-        self.assertEqual(self.another_test_list, self.test_list)
-        #to compare the two objects i've added __eq__method in ChainedList class
+        self.copy_of_test_list.insert_node_beginning(7)
+        self.copy_of_test_list.delete_node(7)
+        self.assertEqual(self.copy_of_test_list, self.test_list)
+        #to compare the two objects i've added __eq__ method in ChainedList class
 
 
     def test_added_top_equals_top(self):
